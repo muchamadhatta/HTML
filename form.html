@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+</head>
+
+<body>
+
+<!-- <table border="0px">
+
+    <tr>
+        <td>
+            <label for="nama">Nama Lengkap</label>
+            
+        </td>
+        <td>
+            :
+        </td>
+        <td>
+            <input type="text" placeholder="Nama" id="nama">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="email">Alamat Email</label>
+        </td>
+        <td>
+            :
+        </td>
+        <td>
+            <input type="email" placeholder="Email" id="email">
+        </td>
+    </tr>
+</table> -->
+
+    <h1>Formulir Isian</h1>
+    <form action="/daftar" method="post">
+        <div>
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" placeholder="Nama" id="nama" name="nama">
+        </div>
+        <div>
+            <label for="email">Alamat Email</label>
+            <input type="email" placeholder="Email" id="email" name="email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password" name="password">
+        </div>
+        <div>
+            <label for="phone">Nomor Handphone</label>
+            <input type="number" placeholder="Phone" id="phone" name="phone">
+        </div>
+        <!-- <button>daftar</button> -->
+        <button type="submit">Kirim</button>
+        <!-- <input type="submit" value="daftar"> -->
+    </form>
+
+
+    <hr>
+    <h1>Formulir Isian Kedua</h1>
+    <form action="/order">
+        <label for="baju">Baju</label>
+        <input type="radio" name="pakaian" id="baju" value="baju">
+        <label for="celana">Celana</label>
+        <input type="radio" name="pakaian" id="celana" value="celana" >
+        <label for="kaos">Kaos</label>
+        <input type="radio" name="pakaian" id="kaos" value="kaos">
+        <button type="submit">order</button>
+    </form>
+</body>
+
+</html>
